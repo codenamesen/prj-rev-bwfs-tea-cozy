@@ -1,0 +1,185 @@
+/*div{
+  border: 1px solid white;
+}*/
+
+/*Removes the extra margins from the body so that web page could stretch end to end*/
+body{
+  margin: 0px;
+}
+
+/*This styles apply to entire page*/
+header, .main, .contact, footer{
+  font-family: Helvetica ;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+}
+
+/*This styles the header*/
+header{
+  display: flex;
+  height: 69px;
+  border-bottom: 1px solid white;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+  opacity: 0.2;
+}
+
+.logo img{
+  height: 50px;
+}
+
+header .logo{
+  display: flex;
+  margin: auto 10px;
+  justify-content: flex-start;
+}
+
+nav span{
+  margin: 0px 10px;
+}
+
+/*The permanent color of the links*/
+nav a{
+  color: white;
+}
+/*Header styles end here*/
+
+/*Styles for the class main starts form here*/
+.main{
+  padding-top: 70px;
+}
+  /*This styles the class mainimg or top-most box*/
+.mainimg{
+  height: 700px;
+  width: 1200px;
+  background-image: url(../images/img-mission-background.jpg);
+
+  background-position: center;
+  /*background-repeat: no-repeat;*/
+  margin: 0 auto;
+  /*position: relative;*/
+  top: 68px;
+}
+
+.mainimg{
+  display: flex;
+  align-items: center;
+}
+
+.mainimg .caption{
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90px;
+  padding: 10px 0px;
+}
+
+.mainimg .caption h2, .mainimg .caption h4{
+  margin: 0px;
+}
+
+  /*The styles for the class mainimg or the top-most box ends here*/
+
+  /*The mid-sction of the page starts form here*/
+.month{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+  margin: 0px auto 0px auto;
+  justify-content: center;
+}
+  /*Sets the width to stretch end to end of the middle container*/
+.month .caption{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90px;
+  margin: 80px 0px 20px 0px;
+}
+
+.month h2, .month h4{
+  margin: 0px;
+}
+
+  /*Sets the width of each and every tea image sample*/
+.month .tea img{
+  width: 300px;
+  height: 200px;
+}
+  /*Sets the top and bottom margin for the box containg the tea sample image and its description*/
+.month .tea{
+  margin: 5px 15px;
+}
+  /*This sets the margin for the description of the tea sample image*/
+.month .tea h4{
+  margin: 10px auto;
+}
+/*Style of the mid-section of the webpage ends here*/
+
+
+/*Style for the loacation box containing the three small box for addresses starts here*/
+.location{
+  margin: 60px auto 0px auto;
+  height: 500px;
+  width: 1200px;
+  background-image: url(../images/img-locations-background.jpg);
+  background-position:center 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.location .caption{
+  position: absolute;
+  top: 40px;            /*55px touches the top of the middle box*/
+  /*margin: auto;*/
+}
+
+.location .address{
+  margin: 15px 20px;
+  width: 300px;
+  height: 250px;
+  background-color: black;
+  opacity: 1;
+}
+
+.location .address{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+  /*To strip the contents of the address box of the default margins*/
+.address p, .address h3{
+  margin: 0px;
+}
+
+/*This styles the contact*/
+.contact{
+  height: 200px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+ .contact h2{
+ padding-top: 10px;
+ margin: 0px;
+}
+
+/*This styles the copyright*/
+.copyright{
+  margin: 0 20px;
+  padding: 0px 0px 40px 0px;
+  text-align: left;
+}
